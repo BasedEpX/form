@@ -47,10 +47,10 @@ h1 {
 h1:hover {
     height: 80px;
     width: auto;
-    color: rgba(255,235, 240, 0.5);
+    color: rgba(255,255, 255, 0.8);
     text-align: center;
     border-radius: 15px;
-    background-color: rgba(220,220,196,0.9);
+    background-color: rgba(94, 62, 23, 0.9);
     padding-top: 40px;
 }
 
