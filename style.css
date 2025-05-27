@@ -1,0 +1,254 @@
+body {
+    background-image: url("images/3881.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+    -webkit-animation-name: chgt-img;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-delay: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-direction: alternate-reverse;
+
+    -moz-animation-name: chgt-img;
+    -moz-animation-timing-function: ease;
+    -moz-animation-delay: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate-reverse;
+    -moz-animation-duration: 5s;
+
+    -o-animation-name: chgt-img;
+    -o-animation-timing-function: ease;
+    -o-animation-delay: 5s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: alternate-reverse;
+    -o-animation-duration: 5s;
+    
+    animation-name: chgt-img;
+    animation-timing-function: ease;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-duration: 5s;
+
+    font-size: 13px ;
+}
+
+h1 {
+    height: 80px;
+    width: auto;
+    color: rgba(12,12,12,0.7);
+    text-align: center;
+    background-color: rgba(255,228,196,0.8);
+    border-radius: 15px;
+    padding-top: 40px;
+}
+
+h1:hover {
+    height: 80px;
+    width: auto;
+    color: rgba(255,235, 240, 0.5);
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(12,12,255,0.7);
+    padding-top: 40px;
+}
+
+section {
+    position: relative;
+    float: inherit;
+}
+
+
+footer {
+    height: 80px;
+    padding-top: 30px;
+    font-family: "SF Pro",Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0,0.6);
+    font-weight: 550;
+    text-align: center;
+    position: relative;
+}
+
+@-webkit-keyframes chgt-img {
+    from {background-image: url("images/formuaire.jpg"); background-size: cover;}
+    to {background-image: url("images/3881.jpg"); background-size: cover;}
+}
+
+@-moz-keyframes chgt-img {
+    from {background-image: url("images/formuaire.jpg"); background-size: cover;}
+    to {background-image: url("images/3881.jpg"); background-size: cover;}
+}
+
+@-o-keyframes chgt-img {
+    from {background-image: url("images/formuaire.jpg"); background-size: cover;}
+    to {background-image: url("images/3881.jpg"); background-size: cover;}
+}
+
+@keyframes chgt-img {
+    from {background-image: url("images/formuaire.jpg"); background-size: cover;}
+    to {background-image: url("images/3881.jpg"); background-size: cover;}
+}
+
+#fb,#tw,#gp,#lk {
+    width: 27px;
+    height: 28px;
+    display: block;
+    border-radius: 5px;
+    position: absolute;    
+}
+
+#fb{
+    background-image: url("images/sprite.png");
+    background-position: 0px 0px;
+}
+#tw {
+    background-image: url("images/sprite.png");
+    background-position: -31px 0px;
+    left: 33px;
+}
+#gp{
+    background-image: url("images/sprite.png");
+    background-position: 28px 0px;
+    left: 66px;
+}
+
+#lk{
+    background-image: url("images/sprite.png");
+    background-position: 59px 29px;
+    left: 100px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 6px;
+    position: start;
+    font-weight: 550;
+    font-size: 1rem;
+}
+
+#date {
+    text-align: center;
+} 
+
+main {
+    background-color: rgba(128,128,128,0.4);
+    border-radius: 13px;
+    text-align: center;
+
+}
+
+form {
+    width: 95%;
+    max-width: 420px;
+    margin: 32px auto;
+    padding: 32px 18px 24px 18px;
+    background-color: rgba(255,255,255,0.85);
+    position: relative;    
+    display: inline-block;
+    border-right: groove;
+    border: none;
+    border-width: 15px;
+    border-color: transparent;
+    box-shadow: 0 4px 24px rgba(0, 0, 0,0.18);
+    border-radius: 24px;
+}
+
+h2 {
+    color: rgba(5, 5, 5,0.5);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input {
+    width: 90%;
+    max-width: 350px;
+    margin-bottom: 18px;
+    padding: 8px 10px;
+    font-size: 1rem;
+    border: 2px solid rgba(0,0,0,0.4);
+    font-family: "SF Pro",Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 550;
+    font-variant-numeric: oldstyle-nums;
+    font-size: 14px;
+    border-style: double;
+    border: 1.5px solid rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+select {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: "SF Pro",Verdana, Geneva, Tahoma, sans-serif, monospace;
+    background-color: inherit;
+    border: none;
+    color: rgba(0, 0, 0,0.8);
+    font-weight: 570;
+    border-radius: 15px;
+}
+
+
+#serie,#mention {
+    border-radius: 7px;
+}
+
+option {
+    font-family: "SF Pro";
+    font-weight: 550;
+}
+
+fieldset legend {
+    font-size: 1.3em;
+    font-weight: 550;
+}
+
+fieldset {
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255,255,255,0.5);
+
+}
+
+
+fieldset input {
+    margin-bottom: 10px;
+}
+
+button {
+    font-family: "SF Pro",Verdana, Geneva, Tahoma, sans-serif, monospace;
+    border-style: double;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 12px 56px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: inherit;
+    border: none;
+    border-radius: 14px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+@media (max-width: 600px){
+    form {
+        padding: 16px 14px;
+        max-width: 98vw;
+    }
+    input, select {
+        width: 98%;
+        font-size: 0.98rem;
+    }
+} 
+
+button:hover {
+    color: rgba(255,255,255,1);
+    background-color: #1b5e20;
+}

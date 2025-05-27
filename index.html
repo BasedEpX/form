@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <title> Bourse </title>
+</head>
+<body>
+    <header>
+        <h1> Formulaire de demande de bourse </h1>
+    </header>
+    <main>
+        <form method="post" action="traitement.php">
+            <h2> Formulaire </h2><br>
+            <label for="name"> Nom(s) : </label><br><br>
+            <input type="text" id="name" name="name"  size="30" placeholder="Nom(s)/Name(s)" required><br><br>
+            <label for="surname"> Prénom(s): </label><br><br>
+            <input type="text" id="surname" name="surname" size="30" placeholder="Prénom(s)/Surname(s)"required><br><br>
+            <fieldset>
+                <legend> Sexe </legend> 
+                <input id="homme" type="radio" name="gender" value="homme"><label for="homme">Homme</label>
+                <input id="femme" type="radio" name="gender" value="femme"><label for="femme">Femme</label><br><br>
+            </fieldset><br><br>    
+            <label for="date"> Date de naissance : </label>
+            <input  id="date" type="date" name="birthday" required><br><br>
+            <label for="phone"> Numéro de téléphone : </label>
+            <input type="tel" id="phone" name="phone" maxlength="13" minlength="9" size="13" placeholder="N° Tel " required><br><br>
+            <label for="email"> Adresse email: </label>
+            <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+            <label for="serie"> Série : </label>
+                <select name="serie" id="list-serie" aria-placeholder="Choix de la série" required>
+                    <option  id="default" value="" selected disabled > Choix de la série</option>
+                    <option value="scientifique">S/C</option>
+                    <option value="biologique">D</option>
+                    <option value="technique">TI</option>
+                    <option value="litteraire">A</option>
+                </select><br><br>
+            <label for="mention"> Mention </label>
+            <select name="mention" id="mention">
+                <option value="" selected disabled> Mention obtenue </option>
+                <!-- <option value="Passable"> Passable </option> -->
+                <option value="Assez bien"> Assez bien</option>
+                <option value="bien">Bien</option>
+                <option value="très bien">Très bien</option>
+                <option value="excellente">Excellente</option>
+            </select><br><br>
+            <label for="pays"> Territoire</label>
+            <select name="pays" id="pays">
+                <option value="" selected disabled> Origine de la demande </option>
+                <option value="usa">Etats Unis</option>
+                <option value="france">France</option>
+                <option value="canada">Canada</option>
+                <option value="belgique">Belgique</option>
+                <option value="allemagne">Allemagne</option>
+                <option value="angleterre">Angleterre</option>
+                <option value="russie">Russie</option>
+                <option value="tunisie">Tunisie</option>
+                <option value="algerie"> Algérie</option>
+                <option value="angola"> Angola </option>
+                <option value="burkina Faso">Burkina Faso</option>
+                <option value="burundi">Burundi</option>
+                <option value="botswana">Botswana</option>
+                <option value="congo">Congo</option>
+                <option value="côte d'Ivoire">Côte d'ivoire</option>
+                <option value="cap Vert">Cap Vert</option>
+                <option value="cameroun">Cameroun</option>
+                <option value="egypte">Egypte</option>
+                <option value="ethiopie">Ethiopie</option>
+                <option value="Gabon">Gabon</option>
+                <option value="guinée Bissau">Guinée Bissau</option>
+                <option value="lesotho">Lesotho</option>
+                <option value="maroc">Maroc</option>
+                <option value="mauritanie">Mauritanie</option>
+                <option value="mozambique">Mozambique</option>
+                <option value="namibie">Namibie</option>
+                <option value="Niger">Niger</option>
+                <option value="nigeria">Nigeria</option>
+                <option value="rwanda">Rwanda</option>
+                <option value="senegal">Senegal</option>
+                <option value="soudan">Soudan</option>
+                <option value="zambie">Zambie</option>
+                <option value="zimbabwe">Zimbabwe</option>
+            </select><br><br>
+            <button type="submit"> Envoyer </button>
+        </form>
+    </main>
+   <footer>
+        <p> Copyright &copy; 2025 FSVB - Toute reproduction est interdite.</p>
+        <section>
+            <a href="http://facebook.com/bourses-etudiants" id="fb"></a>
+            <a href="http://twitter.com/bourses-etudiants" id="tw"></a>
+            <a href="http://googleplus.com/bourses-etudiants" id="gp"></a>
+            <a href="http://linkedin.com/bourses-etudiants" id="lk"></a>
+        </section>
+   </footer>
+</body>
+</html>
